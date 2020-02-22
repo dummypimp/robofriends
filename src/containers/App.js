@@ -3,6 +3,7 @@ import CardList from '../components/CardList'; // eslint-disable-next-line
 //import { robots } from './robots';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 import './App.css';
 
 
@@ -36,8 +37,10 @@ class App extends Component{
                 <div className='tc'>
                 <h1>Robo Friends</h1>
                 <SearchBox SearchChange={this.onSearchChange}/>
-                <Scroll>
-                <CardList robots={filteredRobots}/> 
+                <Scroll> 
+                    <ErrorBoundry>
+                        <CardList robots={filteredRobots}/> 
+                    </ErrorBoundry>
                 </Scroll>
                 </div>
             );
