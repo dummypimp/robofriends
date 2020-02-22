@@ -1,0 +1,13 @@
+import React from 'react';
+
+class Hello extends React.Component {
+    render(){ //this is jsx syntax,, react complies into its own 
+        return (
+        <div className="f1 tc"> // class is a reserved key word
+        <h1>What world</h1>
+        </div>
+        )
+    }
+}
+
+export default Hello;  //doesnt run without this

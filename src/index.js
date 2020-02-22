@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import Card from './Card'; //default // eslint-disable-next-line
+import App from './containers/App';
+import 'tachyons';
 import * as serviceWorker from './serviceWorker';
+//import { robots } from './robots'; //not default needs destructuring // eslint-disable-next-line
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
